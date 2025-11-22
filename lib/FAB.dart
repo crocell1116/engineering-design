@@ -44,7 +44,7 @@ class _FABPageState extends State<FABPage> with SingleTickerProviderStateMixin {
 
   /*사용시 같은 네트워크에 있어야 함.*/
   final String _voiceUrl =
-      "https://port-0-engineering-design-mi866upaa674bc90.sel3.cloudtype.app/AI";
+      "https://자신의 컴퓨터 IP:.env에서 설정한 서버 포트/AI";
 
   @override
   void initState() {
@@ -711,3 +711,4 @@ class _FABPageState extends State<FABPage> with SingleTickerProviderStateMixin {
     );
   }
 }
+
