@@ -18,6 +18,7 @@ if not api_key:
 
 genai.configure(api_key=api_key)
 
+# 3. 시스템 프롬프트 설정 (수정됨)
 SYSTEM_INSTRUCTION = """당신은 친절한 AI 어시스턴트입니다. 
 규칙:
 1. 모든 답변은 1~2문장 이내로 짧고 간결하게 답변하세요.
@@ -104,5 +105,5 @@ def chat():
         }), 500
 
 if __name__ == '__main__':
-    port = int(os.getenv("PORT", 5000))
+    port = int(os.getenv("PORT") or 5000)
     app.run(port=port, debug=True)
